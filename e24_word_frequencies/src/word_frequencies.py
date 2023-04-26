@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 
 def word_frequencies(filename):
-    return {}
+    with open(filename, 'r') as f:        
+        s = f.read()
+        words = s.split() 
+        words = [w.strip("""!"#$%&'()*,-./:;?@[]_""") for w in words]
+        wc = {w:0 for w in words}
+        for w in words:
+            wc[w] += 1
+    return wc
 
 def main():
-    pass
+    print(word_frequencies(r"e24_word_frequencies\src\alice.txt"))
 
 if __name__ == "__main__":
     main()
