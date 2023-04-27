@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from functools import reduce
 
+#split is making a list
+#strip remove white spaces or given characters
 def acronyms(s):
     rd = [i.strip(",.()") for i in s.split()]
     relist = []

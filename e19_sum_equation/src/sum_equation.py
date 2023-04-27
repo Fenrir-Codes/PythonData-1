@@ -8,6 +8,8 @@ def sum_equation(L):
     returning = " + ".join(e) #add a + sign between numbers
     return f"{returning} = {sum(L)}" #sum L
 
+
+
 def main():
     print(sum_equation([1, 5, 7]))
 
