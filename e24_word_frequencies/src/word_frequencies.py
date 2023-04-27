@@ -8,6 +8,9 @@ def word_frequencies(filename):
         wc = {w:0 for w in words}
         for w in words:
             wc[w] += 1
+        items = sorted(wc.items(), key= lambda item : item[1])
+        wc = dict(items)
+        print(wc['Alice'])
     return wc
 
 def main():
