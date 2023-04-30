@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-def extract_numbers(string):
-    words = string.split()
+def extract_numbers(s):
+    words = s.split()
     numbers = []
     for word in words:
         try:

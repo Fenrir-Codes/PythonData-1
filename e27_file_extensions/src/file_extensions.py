@@ -6,9 +6,9 @@ def file_extensions(filename=r"e27_file_extensions\src\filenames.txt"):
     with open(filename, 'r') as f:
         for line in f:
             line = line[:-1]
-            splitline = line.split('.')
-            if len(splitline) > 1:
-                ext = splitline[-1]
+            sl = line.split('.')
+            if len(sl) > 1:
+                ext = sl[-1]
                 if ext in extDict:
                     extDict[ext].append(line)
                 else:

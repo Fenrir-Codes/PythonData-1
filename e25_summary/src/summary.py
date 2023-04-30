@@ -13,13 +13,13 @@ def summary(filename):
                 L.append(f)
             except ValueError:
                 pass
-        sm = sum(L)
-        avg = sm / len(L)
+        s = sum(L)
+        avg = s / len(L)
         dif = 0
         for x in L:
             dif += (x - avg)**2
         stddiv = math.sqrt(dif / (len(L) - 1))
-    return (sm, avg, stddiv)
+    return (s, avg, stddiv)
 
 def main():
     for filename in sys.argv[1:]:
