@@ -5,7 +5,7 @@ import numpy as np
 
 def load():
     import pandas as pd
-    filepath = r"C:\Users\Tec\Desktop\GhRep\Python-og-DataAnalyse_Oliver\excercises\part03\e05_correlation\src\iris.csv"
+    filepath = r"H:\GitHub repositories\PythonData\øvelser\e41_correlation\src\iris.csv"
     return pd.read_csv(filepath).drop('species', axis=1).values
 
 def lengths():
@@ -21,7 +21,6 @@ def correlations():
 def main():
     print(lengths())
     print(correlations())
-    # 123
 
 if __name__ == "__main__":
     main()
